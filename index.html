@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <div class="logo-container">
+          <img
+            src="./images/odin-lined.png"
+            alt="ODIN logo"
+            class="odin-logo"
+          />
+          <p id="odin-text">ODIN</p>
+        </div>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+            >Halie West</a
+          >
+          on Unsplash
+        </p>
+      </div>
+
+      <div class="right-panel">
+        <header>
+          <h2 class="panel-header">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up <em>now</em> to get started.
+            <br />
+            <br />
+            You <em>know</em> you want to.
+          </h2>
+        </header>
+
+        <form id="signup-form">
+          <div class="form-wrapper">
+            <h2>Let's do this!</h2>
+
+            <div class="form-row">
+              <div>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" required />
+              </div>
+              <div>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="phone">Phone number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div>
+                <label for="confirm-password">Confirm password</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div id="form-button">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+
+        <footer class="panel-footer">
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </footer>
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
